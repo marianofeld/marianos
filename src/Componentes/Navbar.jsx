@@ -3,7 +3,9 @@ export const Navbar = () => {
 
 
     return (
-        <nav className="bg-orange-500">
+        <>
+        <p className="bg-black text-white text-center py-1">Comunicate con 47681405</p>
+        <nav className="bg-orange-500 mb-20 ">
             <div className="max-w-7xl mx-auto px-4 py-6">
                 <div className="flex justify-between">
                     {/* Logo */}
@@ -28,6 +30,7 @@ export const Navbar = () => {
                 </div>
             </div>
         </nav>
+        </>
     )
 }
 

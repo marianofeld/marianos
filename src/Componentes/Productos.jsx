@@ -5,7 +5,8 @@ export const Productos = () => {
             id: 1,
             color: "bg-red-500",
             imagen: "https://via.placeholder.com/150",
-            descripcion: "Este es un producto de color rojo."
+            descripcion: "Este es un producto de color rojo.",
+            colorP: true
         },
         {
             nombre: "Azul",
@@ -33,7 +34,8 @@ export const Productos = () => {
             id: 5,
             color: "bg-purple-500",
             imagen: "https://via.placeholder.com/150",
-            descripcion: "Este es un producto de color morado."
+            descripcion: "Este es un producto de color morado.",
+            colorP: false
         },
         {
             nombre: "Rosa",
@@ -75,13 +77,13 @@ export const Productos = () => {
 
 
     return (
-        <div className="container mx-auto mt-4 flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap gap-4 ml-20">
     {productos.map((prod) => (
-        <div key={prod.id} className="border-black max-w-xs mx-2 my-2 overflow-hidden shadow-2xl">
+        <div key={prod.id} className="border-black min-w-60 max-w-60 max-h-80 min-h-72 mx-2 overflow-hidden shadow-2xl">
             <div className={`${prod.color} h-48 w-full rounded-lg`}></div>
             <div className="p-4">
-                <div className="uppercase tracking-wide text-sm font-semibold text-black">{prod.nombre}</div>
-                <p className="mt-2 text-sm text-gray-600">{prod.descripcion}</p>
+                <div className="uppercase tracking-wide text-l font-semibold text-black">{prod.nombre}</div>
+                <p className="mt-2 text-m text-gray-600">{prod.descripcion}</p>
             </div>
         </div>
     ))}
