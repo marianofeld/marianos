@@ -1,0 +1,5 @@
+consejos:
+
+ponerle a los botones el fondo de la navbar
+¿hacer un loading? clase, promesa al final
+
